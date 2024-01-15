@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 9px solid cyan;
+    animation: btn1 5s 0.125ms infinite ease-in-out;
+}
+
+.container {
+    text-align: center;
+}
+
+.keyboard-display {
+    border: 1px solid #ccc;
+    padding: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: btn1 4s 0.125ms infinite ease-in-out;
+}
+
+@keyframes btn1 {
+    0% {
+      background-color: rgb(249, 7, 249);
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: #33ccff;
+    }
+
+    75% {
+        background-color: chartreuse;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+#pressed-key, #key-code {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
